@@ -53,4 +53,5 @@ alias c='clear'
 autoload -U compinit && compinit
 zinit cdreplay -q
 eval "$(fzf --zsh)"
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+# eval "$(zoxide init zsh)"

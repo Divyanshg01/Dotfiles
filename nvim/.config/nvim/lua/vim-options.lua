@@ -34,7 +34,7 @@ vim.keymap.set("n" , "qq","<cmd>q<CR>" , {})
 
 
 vim.keymap.set("n" , "<S-b>","<C-o>" , {})
-
+vim.opt.termguicolors = true
 vim.keymap.set("n" , "<C-a>","<cmd>nohlsearch<CR>" , {})
 vim.g.mapleader = " "
 -- vim.cmd [[

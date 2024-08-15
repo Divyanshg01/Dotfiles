@@ -8,19 +8,21 @@ return {
             "saadparwaiz1/cmp_luasnip",
             "rafamadriz/friendly-snippets",
         },
-
     },
     {
         "hrsh7th/nvim-cmp",
         dependencies = {
-            'hrsh7th/cmp-path',
-            'hrsh7th/vim-vsnip', -- Snippets plugin
+            "hrsh7th/cmp-path",
+            "hrsh7th/vim-vsnip", -- Snippets plugin
         },
         config = function()
             local cmp = require("cmp")
             require("luasnip.loaders.from_vscode").lazy_load()
 
             cmp.setup({
+                formatting = {
+                    format = require("nvim-highlight-colors").format,
+                },
                 snippet = {
                     expand = function(args)
                         require("luasnip").lsp_expand(args.body)
@@ -40,8 +42,8 @@ return {
                 sources = cmp.config.sources({
                     { name = "nvim_lsp" },
                     { name = "luasnip" }, -- For luasnip users.
-                    { name = 'vsnip' }, -- For `vsnip` users.
-                    { name = 'path' },
+                    { name = "vsnip" }, -- For `vsnip` users.
+                    { name = "path" },
                 }, {
                     { name = "buffer" },
                 }),
