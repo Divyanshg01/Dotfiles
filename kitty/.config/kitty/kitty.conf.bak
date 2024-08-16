@@ -1,14 +1,13 @@
 # BEGIN_KITTY_THEME
-# Adwaita darker
+# Adwaita dark
 include current-theme.conf
 # END_KITTY_THEME
-# Font
 
 font_family JetBrainsMono NF
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
-font_size 13.0
+font_size 10.0
 
 
 # Theme
@@ -23,3 +22,6 @@ font_size 13.0
 term xterm-256color
 background_opacity 0.60
 background_blur 30
+
+
+
