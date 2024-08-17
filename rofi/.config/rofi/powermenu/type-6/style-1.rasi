@@ -11,13 +11,12 @@
 configuration {
     show-icons:                 false;
 }
-
 /*****----- Global Properties -----*****/
 * {
     font:                        "JetBrains Mono Nerd Font 10";
     background:                  #172621FF;
     background-alt:              #172621FF;
-    foreground:                  #4D734C;
+    foreground:                  #6f956e;
     selected:                    #3B593F;
     active:                      #4d734c;
     urgent:                      #1D241D;
