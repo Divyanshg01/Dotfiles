@@ -22,6 +22,8 @@ configuration {
     urgent:                      #1D241D;
 }
 
+
+
 /*
 USE_BUTTONS=YES
 */
@@ -56,7 +58,7 @@ imagebox {
     spacing:                     30px;
     padding:                     30px;
     background-color:            transparent;
-    background-image:            url("./rofi_powermenu.jpg", height);
+    background-image:            url("~/Downloads/rofi_powermenu.jpg", height);
     children:                    [ "inputbar", "dummy", "message" ];
 }
 
