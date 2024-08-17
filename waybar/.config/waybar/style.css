@@ -30,16 +30,24 @@
 .modules-left{
     background-color: rgba(17, 79, 17, 0.3);
     border-radius: 20px;
-
+    /* padding: 10px; */
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 .modules-right{
     background-color: rgba(17, 79, 17, 0.3);
     border-radius: 20px;
+    /* padding: 10px; */
+    padding-left: 7px;
+    padding-right: 7px;
 }
 .modules-center{
     background-color: rgba(17, 79, 17, 0.3);
     border-radius: 20px;
+    /* padding: 10px; */
+    padding-left: 7px;
+    padding-right: 7px;
 
 }
 window#waybar {
