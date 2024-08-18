@@ -1,6 +1,8 @@
 ## My Current Setup
 TERMINAL -> kitty + zsh + ohmyposh
+
 EDITOR   -> nvim + tmux
+
 DESKTOP ENV -> hyprland+hyprpaper+rofi(wayland fork) + waybar
 
 ## Packages for Neovim
