@@ -29,13 +29,14 @@ vim.cmd("set hidden")
 vim.cmd("set termguicolors")
 vim.cmd("set modifiable")
 vim.cmd("set clipboard+=unnamedplus")
-vim.keymap.set("n" , "<C-q>","<cmd>qa<CR>" , {})
-vim.keymap.set("n" , "qq","<cmd>q<CR>" , {})
+vim.keymap.set("n", "qq", "<cmd>qa<CR>", {})
+-- vim.keymap.set("n", "fq", "<cmd>q<CR>", {})
+-- vim.keymap.set("n", "ff", "<cmd>wa<CR>", {})
+-- vim.keymap.set("n", "qq", "<cmd>q<CR>", {})
 
-
-vim.keymap.set("n" , "<S-b>","<C-o>" , {})
+vim.keymap.set("n", "<S-b>", "<C-o>", {})
 vim.opt.termguicolors = true
-vim.keymap.set("n" , "<C-a>","<cmd>nohlsearch<CR>" , {})
+vim.keymap.set("n", "<C-a>", "<cmd>nohlsearch<CR>", {})
 vim.g.mapleader = " "
 -- vim.cmd [[
 --   highlight Normal guibg=none

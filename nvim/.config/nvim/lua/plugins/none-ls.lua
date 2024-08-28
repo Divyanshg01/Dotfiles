@@ -18,7 +18,7 @@ return {
 				null_ls.builtins.formatting.gofmt,
 				null_ls.builtins.formatting.sql_formatter,
 				null_ls.builtins.formatting.tidy,
-                null_ls.builtins.formatting.blackd,
+                null_ls.builtins.formatting.black,
 				null_ls.builtins.diagnostics.rubocop,
 				null_ls.builtins.formatting.cbfmt,
 				null_ls.builtins.diagnostics.cppcheck,
@@ -40,6 +40,6 @@ return {
 		})
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 
-		vim.keymap.set({ "n", "i" }, "<leader>s", "<cmd>wa<CR><cmd>lua vim.lsp.buf.format({})<CR>", {})
+		vim.keymap.set({ "n" }, "ff", "<cmd>lua vim.lsp.buf.format({})<CR><cmd>wa<CR>", {})
 	end,
 }

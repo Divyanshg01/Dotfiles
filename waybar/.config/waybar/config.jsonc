@@ -4,14 +4,14 @@
     "mod": "dock",
     "exclusive": true,
     "gtk-layer-shell": true,
-    "margin-bottom": -1,
+    "margin-bottom": -3,
     "passthrough": false,
-    "height": 20,
+    "height": 5,
     "modules-left": [
-        "custom/os_button",
+        "custom/os_button"
     ],
     "modules-center": [
-        "hyprland/workspaces",
+        "hyprland/workspaces"
     ],
     "modules-right": [
         "memory",
@@ -24,14 +24,14 @@
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "active": "",
-            "default": ""
+            "1": "   ",
+            "2": "   ",
+            "3": "   ",
+            "4": "   ",
+            "5": "   ",
+            "6": "   ",
+            "active": "   ",
+            "default": "   ",
         },
         "persistent-workspaces": {
             "*": [
@@ -40,23 +40,23 @@
                 4,
                 5,
                 6
-            ]
-        }
+            ],
+        },
     },
     "hyprland/language": {
         "format": "{}",
         "format-en": "ENG",
-        "format-ru": "РУС"
+        "format-ru": "РУС",
     },
     "custom/os_button": {
         "format": "",
         "on-click": "~/.config/rofi/powermenu/type-6/powermenu.sh",
-        "tooltip": false
+        "tooltip": false,
     },
     "cpu": {
         "interval": 5,
         "format": "  {usage}%",
-        "max-length": 10
+        "max-length": 10,
     },
     "temperature": {
         "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
@@ -64,7 +64,7 @@
         "critical-threshold": 75,
         "tooltip": false,
         "format-critical": "({temperatureC}°C)",
-        "format": "({temperatureC}°C)"
+        "format": "({temperatureC}°C)",
     },
     "disk": {
         "interval": 30,
@@ -72,14 +72,14 @@
         "path": "/",
         "tooltip": true,
         "unit": "GB",
-        "tooltip-format": "Available {free} of {total}"
+        "tooltip-format": "Available {free} of {total}",
     },
     "memory": {
         "interval": 10,
         "format": "   {percentage}%",
         "max-length": 10,
         "tooltip": true,
-        "tooltip-format": "RAM - {used:0.1f}GiB used"
+        "tooltip-format": "RAM - {used:0.1f}GiB used",
     },
     "wlr/taskbar": {
         "format": "{icon} {title:.17}",
@@ -88,11 +88,11 @@
         "on-click-middle": "close",
         "tooltip-format": "{title}",
         "ignore-list": [],
-        "on-click": "activate"
+        "on-click": "activate",
     },
     "tray": {
         "icon-size": 18,
-        "spacing": 3
+        "spacing": 3,
     },
     "clock": {
         "format": "      {:%R\n %d.%m.%Y}",
@@ -108,16 +108,16 @@
                 "days": "<span color='#ecc6d9'><b>{}</b></span>",
                 "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
                 "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
-            }
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+            },
         },
         "actions": {
             "on-click-right": "mode",
             "on-click-forward": "tz_up",
             "on-click-backward": "tz_down",
             "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        }
+            "on-scroll-down": "shift_down",
+        },
     },
     "network": {
         "format-wifi": " {icon}",
@@ -129,13 +129,13 @@
             "󰤢 ",
             "󰤢 ",
             "󰤨 "
-        ]
+        ],
     },
     "battery": {
         "states": {
             "good": 95,
             "warning": 30,
-            "critical": 20
+            "critical": 20,
         },
         "format": "{icon} {capacity}%",
         "format-charging": "  {capacity}%",
@@ -153,7 +153,7 @@
             "󰂁",
             "󰂂",
             "󰁹"
-        ]
+        ],
     },
     "pulseaudio": {
         "max-volume": 150,
@@ -166,8 +166,8 @@
                 " ",
                 " ",
                 " "
-            ]
+            ],
         },
-        "on-click": "pavucontrol"
-    }
+        "on-click": "pavucontrol",
+    },
 }
