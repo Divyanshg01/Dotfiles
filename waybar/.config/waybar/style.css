@@ -32,7 +32,7 @@
     padding-left: 5px;
     padding-right: 5px;
 
-    border: #f8de8a 2px solid;
+    border: #f8de8a 1px solid;
 }
 
 .modules-right {
@@ -42,7 +42,7 @@
     padding-left: 18px;
     padding-right: 14px;
 
-    border: #f8de8a 2px solid;
+    border: #f8de8a 1px solid;
 }
 
 .modules-center {
@@ -52,11 +52,12 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    border: #f8de8a 2px solid;
+    border: #f8de8a 1px solid;
 }
 
 window#waybar {
-    background: @bg_main;
+    background: rgba(0, 0, 0, 0.13);
+    padding: 4px;
     border-top: 1px solid @border_main;
     color: @content_main;
 }
@@ -89,15 +90,15 @@ tooltip label {
 
 #workspaces {
     color: transparent;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    /* padding-top: 5px; */
+    /* padding-bottom: 5px; */
     /* border-radius: 100%; */
     /* margin-right: 1.5px; */
     /* margin-left: 1.5px; */
 }
 
 #workspaces button {
-    padding: 2px;
+    /* padding: 2px; */
     color: @content_inactive;
     transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -234,7 +235,7 @@ tooltip label {
 #clock {
     padding-right: 5px;
     padding-left: 5px;
-    font-size: 18px;
+    font-size: 16px;
     transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
