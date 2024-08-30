@@ -38,6 +38,12 @@ vim.keymap.set("n", "<S-b>", "<C-o>", {})
 vim.opt.termguicolors = true
 vim.keymap.set("n", "<C-a>", "<cmd>nohlsearch<CR>", {})
 vim.g.mapleader = " "
+vim.cmd([[
+augroup highlight_yank
+autocmd!
+au TextYankPost * silent! lua vim.highlight.on_yank({higroup="Visual", timeout=200})
+augroup END
+]])
 -- vim.cmd [[
 --   highlight Normal guibg=none
 --   highlight NonText guibg=none
