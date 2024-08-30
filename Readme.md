@@ -1,14 +1,15 @@
 ## My Current Setup
+
 TERMINAL -> kitty + zsh + ohmyposh
 
-EDITOR   -> nvim + tmux
+EDITOR -> nvim + tmux
 
 DESKTOP ENV -> hyprland+hyprpaper+rofi(wayland fork) + waybar
 
 ## Packages for Neovim
 
 ```bash
-sudo pacman -S stylua grep prettier clang gcc clang python tidy python-black cppcheck mypy shaderc sqlfluff eslint eslint_d
+sudo pacman -S stylua gdb clang grep prettier clang gcc clang python tidy python-black cppcheck mypy shaderc sqlfluff eslint eslint_d
 ```
 
 ```
