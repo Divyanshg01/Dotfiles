@@ -41,3 +41,9 @@ you will also need zathura pdf viewer with poppler pdf backend
 ```bash
 sudo pacman -S zathura
 ```
+
+Also manually Install the latex Treesitter parser
+
+```bash
+:TSInstall latex
+```
