@@ -1,16 +1,87 @@
-return
-{
-    "olimorris/onedarkpro.nvim",
-    priority = 1000, -- Ensure it loads first
+-- return {
+--     "luisiacc/gruvbox-baby",
+--     priority = 1000,
+--     config = function()
+--         -- Enable telescope theme
+--         -- vim.g.gruvbox_baby_telescope_theme = 1
+--
+--         -- vim.g.gruvbox_baby_highlights = { Normal = { fg = "#123123", bg = "NONE", style = "underline" } }
+--         -- Enable transparent mode
+--         vim.g.gruvbox_baby_transparent_mode = 1
+--         vim.cmd.colorscheme("gruvbox-baby")
+--     end,
+-- }
+-- return {
+--     "sainnhe/gruvbox-material",
+--     lazy = false,
+--     priority = 1000,
+--     config = function()
+--         -- Optionally configure and load the colorscheme
+--         -- directly inside the plugin declaration.
+--         vim.cmd("set background=dark")
+--
+--         vim.g.gruvbox_material_background = "hard"
+--         vim.g.gruvbox_material_enable_italic = true
+--         vim.g.gruvbox_material_transparent_background = 2
+--
+--         vim.cmd.colorscheme("gruvbox-material")
+--
+--         require("lualine").setup({
+--             options = {
+--                 theme = "gruvbox-material",
+--             },
+--         })
+--     end,
+-- }
+return {
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
     config = function()
-        require("onedarkpro").setup({
-            options = {
-                transparency = true
-            }
+        -- Default options:
+        require("gruvbox").setup({
+            terminal_colors = true, -- add neovim terminal colors
+            undercurl = true,
+            underline = true,
+            bold = true,
+            italic = {
+                strings = true,
+                emphasis = true,
+                comments = true,
+                operators = false,
+                folds = true,
+            },
+            strikethrough = true,
+            invert_selection = false,
+            invert_signs = false,
+            invert_tabline = false,
+            invert_intend_guides = false,
+            inverse = true, -- invert background for search, diffs, statuslines and errors
+            contrast = "hard", -- can be "hard", "soft" or empty string
+            palette_overrides = {},
+            overrides = {},
+            dim_inactive = false,
+            transparent_mode = true,
         })
-        vim.cmd("colorscheme onedark_dark")
-    end
+        vim.cmd("colorscheme gruvbox")
+        require("lualine").setup({
+            options = {
+                theme = "gruvbox",
+            },
+        })
+    end,
 }
+-- return {
+--     "olimorris/onedarkpro.nvim",
+--     priority = 1000, -- Ensure it loads first
+--     config = function()
+--         require("onedarkpro").setup({
+--             options = {
+--                 transparency = true,
+--             },
+--         })
+--         vim.cmd("colorscheme onedark_dark")
+--     end,
+-- }
 -- return {
 --     "rebelot/kanagawa.nvim",
 --     config = function()
