@@ -29,6 +29,13 @@ cargo install cbfmt
 
 CPP Debugger => [vscode-cpptools](https://github.com/Microsoft/vscode-cpptools)
 
+## Some Other Dependencies
+
+```bash
+pip install cmakelang sqlfluff
+sudo pacman -S lua-jsregexp
+```
+
 ## For Latex Functionality
 
 ```bash
