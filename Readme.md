@@ -11,7 +11,7 @@ Current Theme of TMUX and Nvim is Gruvbox
 ## Packages for Neovim
 
 ```bash
-sudo pacman -S stylua gdb clang grep prettier clang gcc clang python tidy python-black cppcheck mypy shaderc sqlfluff eslint eslint_d
+sudo pacman -S stylua gdb clang grep prettier clang gcc clang python tidy python-black cppcheck mypy shaderc sqlfluff eslint eslint_d typescript-language-server
 ```
 
 ```bash
@@ -54,3 +54,7 @@ Also manually Install the latex Treesitter parser
 ```bash
 :TSInstall latex
 ```
+
+## Notes
+
+- For a js project , you will need a `jsconfig.json` file which you can create from the bashScripts
