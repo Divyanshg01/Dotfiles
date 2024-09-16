@@ -1,4 +1,4 @@
-echo "{
+echo '{
     "compilerOptions": {
         "target": "es6",
         "module": "commonjs",
@@ -16,5 +16,4 @@ echo "{
     "exclude": [
         "node_modules"
     ]
-}" > jsconfig.json
-
+}' > jsconfig.json
