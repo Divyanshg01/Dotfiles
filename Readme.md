@@ -8,6 +8,10 @@ DESKTOP ENV -> hyprland+hyprpaper+rofi(wayland fork) + waybar
 
 Current Theme of TMUX and Nvim is Gruvbox
 
+## Notes
+
+    - Curently using vtsls instead of tsserver for js/ts lsp
+
 ## Packages for Neovim
 
 ```bash
@@ -55,6 +59,8 @@ Also manually Install the latex Treesitter parser
 :TSInstall latex
 ```
 
-## Notes
+## For annotation
 
-- For a js project , you will need a `jsconfig.json` file which you can create from the bashScripts
+```bash
+paru -S gromit-mpx-git
+```
