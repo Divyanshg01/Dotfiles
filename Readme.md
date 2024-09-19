@@ -64,3 +64,5 @@ Also manually Install the latex Treesitter parser
 ```bash
 paru -S gromit-mpx-git
 ```
+
+
