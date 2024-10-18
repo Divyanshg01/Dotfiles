@@ -18,6 +18,8 @@ return {
                     "clangd",
                     "pyright",
                     "html",
+                    "omnisharp_mono",
+                    "omnisharp",
                     "tailwindcss",
                     "emmet_ls",
                     "markdown_oxide",
@@ -40,11 +42,17 @@ return {
             lspconfig.vtsls.setup({
                 capabilities = capabilities,
             })
-            --
+            -- --
             -- lspconfig.ts_ls.setup({
             --     capabilities = capabilities,
             -- })
             lspconfig.html.setup({
+                capabilities = capabilities,
+            })
+            -- lspconfig.omnisharp_mono.setup({
+            -- 	capabilities = capabilities,
+            -- })
+            lspconfig.omnisharp.setup({
                 capabilities = capabilities,
             })
             lspconfig.lua_ls.setup({

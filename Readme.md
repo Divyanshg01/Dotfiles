@@ -8,6 +8,28 @@ DESKTOP ENV -> hyprland+hyprpaper+rofi(wayland fork) + waybar
 
 Current Theme of TMUX and Nvim is Gruvbox
 
+## Screenshots
+
+### Default View
+
+![image1](assets/img1.png)
+
+### File manager
+
+![image2](assets/image2.png)
+
+### btop
+
+![image3](assets/image3.png)
+
+### neovim with gruvbox
+
+![image4](assets/image4.png)
+
+### neovim and tmux
+
+![image5](assets/image5.png)
+
 ## Notes
 
     - Curently using vtsls instead of tsserver for js/ts lsp
@@ -64,5 +86,3 @@ Also manually Install the latex Treesitter parser
 ```bash
 paru -S gromit-mpx-git
 ```
-
-

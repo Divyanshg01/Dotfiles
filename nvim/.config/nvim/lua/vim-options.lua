@@ -41,6 +41,7 @@ vim.keymap.set("n", "<S-b>", "<C-o>", {})
 vim.opt.termguicolors = true
 vim.keymap.set("n", "<C-a>", "<cmd>nohlsearch<CR>", {})
 vim.keymap.set("n", "cpl", "yib", {})
+vim.keymap.set("n", "cpc", '"+y', {})
 vim.g.mapleader = " "
 vim.cmd([[
 augroup highlight_yank
